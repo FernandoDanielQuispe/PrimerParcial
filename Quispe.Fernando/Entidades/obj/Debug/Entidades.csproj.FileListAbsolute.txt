@@ -1,0 +1,6 @@
+C:\UTN PP\Quispe.Fernando\Entidades\bin\Debug\Entidades.dll
+C:\UTN PP\Quispe.Fernando\Entidades\bin\Debug\Entidades.pdb
+C:\UTN PP\Quispe.Fernando\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
+C:\UTN PP\Quispe.Fernando\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\UTN PP\Quispe.Fernando\Entidades\obj\Debug\Entidades.dll
+C:\UTN PP\Quispe.Fernando\Entidades\obj\Debug\Entidades.pdb
