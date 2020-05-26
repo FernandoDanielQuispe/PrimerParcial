@@ -87,6 +87,7 @@
             // 
             // button1
             // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(195, 243);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(160, 31);
@@ -117,9 +118,9 @@
             this.Controls.Add(this.lblFotoCandado);
             this.Controls.Add(this.txtBoxPass);
             this.Controls.Add(this.txtBoxUsuario);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "FrmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Login";
             this.Load += new System.EventHandler(this.Login_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

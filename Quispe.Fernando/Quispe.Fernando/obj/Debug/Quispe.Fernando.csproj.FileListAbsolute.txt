@@ -23,3 +23,11 @@ C:\UTN PP\Quispe.Fernando\Quispe.Fernando\obj\Debug\Quispe.Fernando.FrmSueldoDoc
 C:\UTN PP\Quispe.Fernando\Quispe.Fernando\obj\Debug\Quispe.Fernando.FrmSueldoNoDocente.resources
 C:\UTN PP\Quispe.Fernando\Quispe.Fernando\obj\Debug\Quispe.Fernando.FrmMessageBox.resources
 C:\UTN PP\Quispe.Fernando\Quispe.Fernando\obj\Debug\Quispe.Fernando.FrmMessageBoxError.resources
+C:\UTN PP\Quispe.Fernando\Quispe.Fernando\obj\Debug\Quispe.Fernando.FrmBuscarAlumno.resources
+C:\UTN PP\Quispe.Fernando\Quispe.Fernando\bin\Debug\Interop.WMPLib.dll
+C:\UTN PP\Quispe.Fernando\Quispe.Fernando\bin\Debug\AxInterop.WMPLib.dll
+C:\UTN PP\Quispe.Fernando\Quispe.Fernando\obj\Debug\Interop.WMPLib.dll
+C:\UTN PP\Quispe.Fernando\Quispe.Fernando\obj\Debug\AxInterop.WMPLib.dll
+C:\UTN PP\Quispe.Fernando\Quispe.Fernando\obj\Debug\Quispe.Fernando.csproj.ResolveComReference.cache
+C:\UTN PP\Quispe.Fernando\Quispe.Fernando\obj\Debug\Quispe.Fernando.FrmVideos.resources
+C:\UTN PP\Quispe.Fernando\Quispe.Fernando\obj\Debug\Quispe.Fernando.FrmMessageBoxAsignacion.resources

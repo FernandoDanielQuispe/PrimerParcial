@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CargarDatos.cs" />
     <Compile Include="FrmAltaAlumno.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,6 +71,12 @@
     <Compile Include="FrmAltaNoDocente.Designer.cs">
       <DependentUpon>FrmAltaNoDocente.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmBuscarAlumno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBuscarAlumno.Designer.cs">
+      <DependentUpon>FrmBuscarAlumno.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmInformacionPadres.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +88,12 @@
     </Compile>
     <Compile Include="FrmMessageBox.Designer.cs">
       <DependentUpon>FrmMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMessageBoxAsignacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMessageBoxAsignacion.Designer.cs">
+      <DependentUpon>FrmMessageBoxAsignacion.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmMessageBoxError.cs">
       <SubType>Form</SubType>
@@ -124,6 +137,12 @@
     <Compile Include="FrmSueldoNoDocente.Designer.cs">
       <DependentUpon>FrmSueldoNoDocente.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmVideos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVideos.Designer.cs">
+      <DependentUpon>FrmVideos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmAltaAlumno.resx">
@@ -138,11 +157,17 @@
     <EmbeddedResource Include="FrmAltaNoDocente.resx">
       <DependentUpon>FrmAltaNoDocente.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmBuscarAlumno.resx">
+      <DependentUpon>FrmBuscarAlumno.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmInformacionPadres.resx">
       <DependentUpon>FrmInformacionPadres.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMessageBox.resx">
       <DependentUpon>FrmMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMessageBoxAsignacion.resx">
+      <DependentUpon>FrmMessageBoxAsignacion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMessageBoxError.resx">
       <DependentUpon>FrmMessageBoxError.cs</DependentUpon>
@@ -165,6 +190,9 @@
     <EmbeddedResource Include="FrmSueldoNoDocente.resx">
       <DependentUpon>FrmSueldoNoDocente.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmVideos.resx">
+      <DependentUpon>FrmVideos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -173,6 +201,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -192,6 +221,28 @@
       <Project>{4faf056a-8023-4f66-a67f-20711044c50f}</Project>
       <Name>Entidades</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagen.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -7,19 +7,39 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Entidades;
 
 namespace Quispe.Fernando
 {
     public partial class FrmSueldoDocente : Form
     {
-        public FrmSueldoDocente()
+        private List<Docente> docente;
+        public FrmSueldoDocente(List<Docente> docente)
         {
-            InitializeComponent();
+            InitializeComponent();           
+            this.docente = docente;
         }
-
         private void btnSalir_Click(object sender, EventArgs e)
         {
             this.Close();
+        }  
+        /// <summary>
+        /// muestra el total de dinero de los docentes del jardin
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void FrmSueldoDocente_Load(object sender, EventArgs e)
+        {
+            double sueldoDocente = 0;
+            foreach (Docente item in this.docente)
+            {
+                sueldoDocente += item.Salario;
+            }         
+            txtBoxDocente.Text = sueldoDocente.ToString();
+        }
+        private void txtBoxDocente_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

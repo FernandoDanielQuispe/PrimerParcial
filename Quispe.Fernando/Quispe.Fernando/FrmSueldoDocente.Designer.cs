@@ -29,29 +29,24 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.richTextBoxDocentes = new System.Windows.Forms.RichTextBox();
             this.btnSalir = new System.Windows.Forms.Button();
+            this.txtBoxDocente = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(58, 61);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(54, 176);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(162, 17);
+            this.label1.Size = new System.Drawing.Size(234, 20);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Suledo de los Docentes:";
-            // 
-            // richTextBoxDocentes
-            // 
-            this.richTextBoxDocentes.Location = new System.Drawing.Point(61, 109);
-            this.richTextBoxDocentes.Name = "richTextBoxDocentes";
-            this.richTextBoxDocentes.Size = new System.Drawing.Size(614, 206);
-            this.richTextBoxDocentes.TabIndex = 1;
-            this.richTextBoxDocentes.Text = "";
+            this.label1.Text = "Sueldo Total de los Docentes:";
             // 
             // btnSalir
             // 
+            this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.Location = new System.Drawing.Point(326, 357);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(130, 30);
@@ -60,18 +55,41 @@
             this.btnSalir.UseVisualStyleBackColor = true;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
+            // txtBoxDocente
+            // 
+            this.txtBoxDocente.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxDocente.Location = new System.Drawing.Point(328, 174);
+            this.txtBoxDocente.Name = "txtBoxDocente";
+            this.txtBoxDocente.ReadOnly = true;
+            this.txtBoxDocente.Size = new System.Drawing.Size(174, 26);
+            this.txtBoxDocente.TabIndex = 31;
+            this.txtBoxDocente.TextChanged += new System.EventHandler(this.txtBoxDocente_TextChanged);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(304, 176);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(18, 20);
+            this.label2.TabIndex = 32;
+            this.label2.Text = "$";
+            // 
             // FrmSueldoDocente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.txtBoxDocente);
             this.Controls.Add(this.btnSalir);
-            this.Controls.Add(this.richTextBoxDocentes);
             this.Controls.Add(this.label1);
+            this.ForeColor = System.Drawing.SystemColors.Desktop;
             this.Name = "FrmSueldoDocente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sueldo Docente";
+            this.Load += new System.EventHandler(this.FrmSueldoDocente_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -80,7 +98,8 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.RichTextBox richTextBoxDocentes;
         private System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.TextBox txtBoxDocente;
+        private System.Windows.Forms.Label label2;
     }
 }

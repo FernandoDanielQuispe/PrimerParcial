@@ -28,27 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.richTextBoxNoDocentes = new System.Windows.Forms.RichTextBox();
+            this.lblNoDocentes = new System.Windows.Forms.Label();
             this.btnSalir = new System.Windows.Forms.Button();
+            this.txtBoxNoDocente = new System.Windows.Forms.TextBox();
+            this.lblPesos = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // label1
+            // lblNoDocentes
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(46, 65);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(180, 17);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Sueldo de los No Docentes";
-            // 
-            // richTextBoxNoDocentes
-            // 
-            this.richTextBoxNoDocentes.Location = new System.Drawing.Point(50, 136);
-            this.richTextBoxNoDocentes.Name = "richTextBoxNoDocentes";
-            this.richTextBoxNoDocentes.Size = new System.Drawing.Size(606, 185);
-            this.richTextBoxNoDocentes.TabIndex = 1;
-            this.richTextBoxNoDocentes.Text = "";
+            this.lblNoDocentes.AutoSize = true;
+            this.lblNoDocentes.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNoDocentes.Location = new System.Drawing.Point(47, 185);
+            this.lblNoDocentes.Name = "lblNoDocentes";
+            this.lblNoDocentes.Size = new System.Drawing.Size(255, 20);
+            this.lblNoDocentes.TabIndex = 0;
+            this.lblNoDocentes.Text = "Sueldo Total de los No Docentes";
             // 
             // btnSalir
             // 
@@ -60,18 +54,40 @@
             this.btnSalir.UseVisualStyleBackColor = true;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
+            // txtBoxNoDocente
+            // 
+            this.txtBoxNoDocente.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxNoDocente.Location = new System.Drawing.Point(368, 182);
+            this.txtBoxNoDocente.Name = "txtBoxNoDocente";
+            this.txtBoxNoDocente.ReadOnly = true;
+            this.txtBoxNoDocente.Size = new System.Drawing.Size(185, 26);
+            this.txtBoxNoDocente.TabIndex = 31;
+            // 
+            // lblPesos
+            // 
+            this.lblPesos.AutoSize = true;
+            this.lblPesos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPesos.Location = new System.Drawing.Point(335, 188);
+            this.lblPesos.Name = "lblPesos";
+            this.lblPesos.Size = new System.Drawing.Size(18, 20);
+            this.lblPesos.TabIndex = 32;
+            this.lblPesos.Text = "$";
+            // 
             // FrmSueldoNoDocente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblPesos);
+            this.Controls.Add(this.txtBoxNoDocente);
             this.Controls.Add(this.btnSalir);
-            this.Controls.Add(this.richTextBoxNoDocentes);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblNoDocentes);
+            this.ForeColor = System.Drawing.SystemColors.Desktop;
             this.Name = "FrmSueldoNoDocente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sueldo No Docentes";
+            this.Load += new System.EventHandler(this.FrmSueldoNoDocente_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -79,8 +95,9 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.RichTextBox richTextBoxNoDocentes;
+        private System.Windows.Forms.Label lblNoDocentes;
         private System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.TextBox txtBoxNoDocente;
+        private System.Windows.Forms.Label lblPesos;
     }
 }

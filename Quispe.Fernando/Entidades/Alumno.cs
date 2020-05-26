@@ -22,7 +22,7 @@ namespace Entidades
         /// <summary>
         /// get y set de la propiedad
         /// </summary>
-        protected EColores ColorSala
+        public EColores ColorSala
         {
             get
             {
@@ -37,7 +37,7 @@ namespace Entidades
         /// <summary>
         /// get y set de la propiedad
         /// </summary>
-        protected int Legajo
+        public int Legajo
         {
             get
             {
@@ -52,7 +52,7 @@ namespace Entidades
         /// <summary>
         /// get y set de la propiedad
         /// </summary>
-        protected float PrecioCuota
+        public float PrecioCuota
         {
             get
             {
@@ -67,7 +67,7 @@ namespace Entidades
         /// <summary>
         /// get y set de la propiedad
         /// </summary>
-        protected Responsable Responsable
+        public Responsable Responsable
         {
             get
             {
@@ -105,9 +105,9 @@ namespace Entidades
         /// sobrecarga del operador
         /// </summary>
         /// <param name="a1"></param>
-        public static implicit operator Responsable(Alumno a1)
+        public static implicit operator Responsable(Alumno a)
         {            
-            return a1.responsable;
+            return a.responsable;
         }
 
         /// <summary>
@@ -116,9 +116,15 @@ namespace Entidades
         /// <param name="a1"></param>
         /// <param name="a2"></param>
         /// <returns></returns>
-        public static bool operator ==(Alumno a1, Alumno a2)
+        public static bool operator == (Alumno a1, Alumno a2)
         {
-            return a1.legajo == a2.legajo;
+            //return a1.legajo == a2.legajo;
+            if (!(a1 is null))
+            {
+                return a1.legajo == a2.legajo;
+            }
+            return false;
+
         }
 
         /// <summary>
@@ -129,7 +135,7 @@ namespace Entidades
         /// <returns></returns>
         public static bool operator !=(Alumno a1, Alumno a2)
         {
-            return !(a1.legajo == a2.legajo);
+            return !(a1 == a2);
         }
 
         /// <summary>

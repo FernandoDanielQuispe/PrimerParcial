@@ -8,18 +8,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
 
 namespace Quispe.Fernando
 {
     public partial class FrmAltaDocente : Form
     {
-        private Docente docente;
-        private List<Docente> listaDocente;
-
+        private Docente docente;        
+        private List<Docente> listaDocente; 
 
         public FrmAltaDocente()
         {
-            InitializeComponent();
+            InitializeComponent();           
         }
 
         private void FrmAltaDocente_Load(object sender, EventArgs e)
@@ -47,13 +47,15 @@ namespace Quispe.Fernando
         {
             this.Close();
         }
-
+        /// <summary>
+        /// se limpian los datos
+        /// </summary>
         private void Limpiar()
         {
             this.txtBoxApellido.Clear();
             this.txtBoxNombre.Clear();
             this.txtBoxDNI.Clear();
-            this.radioBtnFem.Checked = false;
+            this.checkBoxFem.Checked = false;
             this.txtBoxHoraIn.Clear();
             this.txtBoxHoraOut.Clear();
             this.txtBoxValorHora.Clear();            
@@ -63,7 +65,6 @@ namespace Quispe.Fernando
         {
             this.Limpiar();
         }
-
 
         /// <summary>
         /// Se agregan los datos
@@ -75,13 +76,16 @@ namespace Quispe.Fernando
         {
             if (int.TryParse(txtBoxDNI.Text, out int dniDocente) && DateTime.TryParse(txtBoxHoraIn.Text, out DateTime horaIn) && DateTime.TryParse(txtBoxHoraOut.Text, out DateTime horaOut) && float.TryParse(txtBoxValorHora.Text, out float valorHora))
             {
-                docente = new Docente(txtBoxNombre.Text, txtBoxApellido.Text, dniDocente, radioBtnFem.Checked, horaIn, horaOut, valorHora);
+                docente = new Docente(txtBoxNombre.Text, txtBoxApellido.Text, dniDocente, checkBoxFem.Checked, horaIn, horaOut, valorHora);
                 
                 listaDocente.Add(docente);
 
+                SoundPlayer sound = new SoundPlayer(@"c:\Windows\Media\notify.wav");
+                sound.Play();
+
                 DialogResult resultado = new DialogResult();
                 Form mensaje = new FrmMessageBox();
-                resultado = mensaje.ShowDialog();
+                resultado = mensaje.ShowDialog();                
             }
             else
             {

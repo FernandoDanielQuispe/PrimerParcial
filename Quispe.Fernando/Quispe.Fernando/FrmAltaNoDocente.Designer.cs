@@ -35,7 +35,6 @@
             this.lblDNI = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
             this.lblSex = new System.Windows.Forms.Label();
-            this.radioBtnFem = new System.Windows.Forms.RadioButton();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
@@ -48,6 +47,7 @@
             this.lblHoraOut = new System.Windows.Forms.Label();
             this.lblFormato = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.checkBoxFem = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // txtBoxApellido
@@ -59,9 +59,9 @@
             // 
             // txtBoxNombre
             // 
-            this.txtBoxNombre.Location = new System.Drawing.Point(439, 65);
+            this.txtBoxNombre.Location = new System.Drawing.Point(420, 65);
             this.txtBoxNombre.Name = "txtBoxNombre";
-            this.txtBoxNombre.Size = new System.Drawing.Size(227, 22);
+            this.txtBoxNombre.Size = new System.Drawing.Size(246, 22);
             this.txtBoxNombre.TabIndex = 1;
             // 
             // txtBoxDNI
@@ -106,17 +106,6 @@
             this.lblSex.Size = new System.Drawing.Size(43, 17);
             this.lblSex.TabIndex = 6;
             this.lblSex.Text = "Sexo:";
-            // 
-            // radioBtnFem
-            // 
-            this.radioBtnFem.AutoSize = true;
-            this.radioBtnFem.Location = new System.Drawing.Point(390, 130);
-            this.radioBtnFem.Name = "radioBtnFem";
-            this.radioBtnFem.Size = new System.Drawing.Size(91, 21);
-            this.radioBtnFem.TabIndex = 7;
-            this.radioBtnFem.TabStop = true;
-            this.radioBtnFem.Text = "Femenino";
-            this.radioBtnFem.UseVisualStyleBackColor = true;
             // 
             // btnAgregar
             // 
@@ -169,7 +158,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(502, 134);
+            this.label1.Location = new System.Drawing.Point(519, 132);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(147, 17);
             this.label1.TabIndex = 15;
@@ -225,12 +214,23 @@
             this.label2.TabIndex = 21;
             this.label2.Text = "hh:mm";
             // 
+            // checkBoxFem
+            // 
+            this.checkBoxFem.AutoSize = true;
+            this.checkBoxFem.Location = new System.Drawing.Point(420, 132);
+            this.checkBoxFem.Name = "checkBoxFem";
+            this.checkBoxFem.Size = new System.Drawing.Size(92, 21);
+            this.checkBoxFem.TabIndex = 36;
+            this.checkBoxFem.Text = "Femenino";
+            this.checkBoxFem.UseVisualStyleBackColor = true;
+            // 
             // FrmAltaNoDocente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.checkBoxFem);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblFormato);
             this.Controls.Add(this.lblHoraOut);
@@ -243,7 +243,6 @@
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.btnAgregar);
-            this.Controls.Add(this.radioBtnFem);
             this.Controls.Add(this.lblSex);
             this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.lblDNI);
@@ -270,7 +269,6 @@
         private System.Windows.Forms.Label lblDNI;
         private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.Label lblSex;
-        private System.Windows.Forms.RadioButton radioBtnFem;
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Button btnLimpiar;
         private System.Windows.Forms.Button btnSalir;
@@ -283,5 +281,6 @@
         private System.Windows.Forms.Label lblHoraOut;
         private System.Windows.Forms.Label lblFormato;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.CheckBox checkBoxFem;
     }
 }

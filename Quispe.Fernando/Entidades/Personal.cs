@@ -51,7 +51,10 @@ namespace Entidades
         /// </summary>
         public double Salario
         {
-            get;     
+            get
+            {
+                return CalcularSalario();
+            }    
         }
 
         #endregion

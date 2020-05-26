@@ -70,7 +70,7 @@ namespace Entidades
         {
             StringBuilder sb = new StringBuilder();
 
-            sb.AppendFormat("{0} {1} {2} {3} {4}", this.Nombre, this.Apellido, this.Dni, this.parentesco, this.telefono);
+            sb.AppendFormat("NOMBRE Y APELLIDO: {0} {1} DNI: {2} PARENTESCO: {3} TELEFONO: {4}", this.Nombre, this.Apellido, this.Dni, this.parentesco, this.telefono);
 
             return sb.ToString();
         }        
